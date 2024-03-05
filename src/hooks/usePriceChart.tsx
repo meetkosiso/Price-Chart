@@ -66,10 +66,15 @@ export function usePriceChart(tokenPrice: TokenPriceResponse) {
 		tokenPrices,
 		atomMinPrice: atomTokenPrice.minValue,
 		atomMaxPrice: atomTokenPrice.maxValue,
-		atomAveragePrice: (atomTokenPrice.maxValue + atomTokenPrice.minValue) / 2,
+		atomAveragePrice: (
+			(atomTokenPrice.maxValue + atomTokenPrice.minValue) /
+			2
+		).toFixed(2),
 		untrnMinPrice: untrnTokenPrice.minValue,
 		unturnMaxPrice: untrnTokenPrice.maxValue,
-		unturnAveragePrice:
-			(untrnTokenPrice.minValue + untrnTokenPrice.maxValue) / 2,
+		unturnAveragePrice: (
+			(untrnTokenPrice.minValue + untrnTokenPrice.maxValue) /
+			2
+		).toFixed(2),
 	};
 }
