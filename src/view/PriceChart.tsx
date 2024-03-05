@@ -9,7 +9,7 @@ export default function WrappedPriceChart() {
 	} = useGetSevenDayTokenPrice();
 
 	if (isLoading) {
-		return <strong>Loading...</strong>;
+		return <strong className='center-loader'>Loading...</strong>;
 	}
 	return <PriceChart tokenPrice={tokenPrice} />;
 }
@@ -46,9 +46,8 @@ function PriceChart({ tokenPrice }: { tokenPrice: TokenPriceResponse }) {
 				</div>
 				<div className='price-chart-view'>
 					<Line
+						className='line-chart'
 						data={tokenPrices}
-						width={700}
-						height={650}
 						options={{
 							maintainAspectRatio: false,
 						}}

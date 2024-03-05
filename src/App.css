@@ -41,3 +41,16 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
+
+.center-loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.line-chart {
+	width: 700px;
+	height: 650px;
+}
