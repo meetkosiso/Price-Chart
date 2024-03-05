@@ -3,6 +3,8 @@
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .price-chart-container {
@@ -53,4 +55,29 @@
 .line-chart {
 	width: 700px;
 	height: 650px;
+}
+
+@media screen and (max-width: 640px) {
+	.price-chart {
+		flex-direction: column;
+	}
+
+	.price-chart-view {
+		width: 100%;
+	}
+
+	.price-chart-info {
+		width: 100%;
+	}
+
+	.line-chart {
+		height: 40vh;
+		width: 80vw;
+	}
+
+	.atom-price-chart-info,
+	.uturn-price-chart-info {
+		align-items: center;
+		margin-bottom: 15px;
+	}
 }
