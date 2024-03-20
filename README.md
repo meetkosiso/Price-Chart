@@ -1,4 +1,4 @@
-# Timewave Challenge
+# Price Chart
 
 A web app that displays 7-day price chart of the $ATOM-$NTRN pair on the Astroport DEX that operates on the Neutron network.
 
